@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 
-const Box = ({ color, width, height }) => {
+const Box = ({id, color, width, height, handler }) => {
     return (
-        <div style={{
+        <div id={id} style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -12,7 +12,7 @@ const Box = ({ color, width, height }) => {
             height:height,
             margin: 10
         }}>
-            <button>X</button>
+            <button onClick={handler}>X</button>
         </div>
     )
 
