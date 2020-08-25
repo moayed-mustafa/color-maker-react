@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 
 const Box = ({id, color, width, height, handler }) => {
     return (
-        <div id={id} style={{
+        <div id={id}
+            role={`${color}-box`}
+            style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -12,7 +14,8 @@ const Box = ({id, color, width, height, handler }) => {
             height:height,
             margin: 10
         }}>
-            <button onClick={handler}>X</button>
+            <button data-testid={id}
+                onClick={handler}>X</button>
         </div>
     )
 

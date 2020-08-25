@@ -40,13 +40,13 @@ const BoxForm = ({submit}) => {
             onSubmit={handleSubmit}
             >
                 <label htmlFor="width">width</label>
-                <input onChange={changeInput} name="width" id="width" value={formData.width}></input>
+                <input onChange={changeInput} name="width" placeholder = "width" id="width" value={formData.width}></input>
 
                 <label htmlFor="height">height</label>
-                <input  onChange={changeInput} name="height" id="height" value={formData.height}></input>
+                <input  onChange={changeInput} name="height" placeholder = "height" id="height" value={formData.height}></input>
 
                 <label htmlFor="color">color</label>
-                <input onChange={changeInput} name="color" id="color" value={formData.color}></input>
+                <input onChange={changeInput} name="color" placeholder = "color" id="color" value={formData.color}></input>
                 <button>Add</button>
 
             </form>

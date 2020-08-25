@@ -24,6 +24,7 @@ const BoxList = (props) => {
         setBoxes((data) =>[...data, {id:uuid(), ...boxes}] )
     }
 
+
     return (
         // this should take color, width , height
             <>
